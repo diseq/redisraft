@@ -43,4 +43,5 @@ jobs:
         with:
           #artifacts: "release.tar.gz,foo/*.txt"
           artifacts: "./redisraft.so"
+          tag: 'latest'
           token: ${{ secrets.GITHUB_TOKEN }}          
