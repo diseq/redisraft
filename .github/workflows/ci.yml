@@ -38,3 +38,9 @@ jobs:
         with:
           name: redisraft
           path: ./redisraft.so
+          
+      - uses: ncipollo/release-action@v1
+        with:
+          #artifacts: "release.tar.gz,foo/*.txt"
+          artifacts: "./redisraft.so"
+          token: ${{ secrets.GITHUB_TOKEN }}          
