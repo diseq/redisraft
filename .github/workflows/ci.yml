@@ -48,3 +48,5 @@ jobs:
           tag: 'latest'
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}          
+
+      - uses: gautamkrishnar/keepalive-workflow@master
